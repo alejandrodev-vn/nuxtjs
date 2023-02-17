@@ -1,8 +1,8 @@
-# cs-sme-frontend
+# learn nuxtjs
 
 ## Require
 
-- Node >v.10.13
+- Node v\>v14.18.2
 - NPM >v6.1 or yarn
 
 ## Tech Stacks
