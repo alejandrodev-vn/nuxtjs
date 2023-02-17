@@ -1,0 +1,52 @@
+{
+  "formLogin": {
+    "happyCase": {
+      "email = 4 kí tự thường": {
+        "email": "abcd@production.com.vn",
+        "password": "Aa123456@"
+      },
+      "email = 4 kí tự số ": {
+        "email": ".123@production.com.vn",
+        "password": "Aa123456@"
+      },
+      "email = 30 kí tự thường": {
+        "email": "qwertyuiopasdfghjklzxcvbnm123@production.com.vn",
+        "password": "Aa123456@"
+      },
+      "email = 30 kí tự số ": {
+        "email": "1.2.3.4.5.6.7.8.98958468685989@production.com.vn",
+        "password": "Aa123456@"
+      }
+    },
+    "badCase": {
+      "email = 4 kí tự đặc biệt": {
+        "email": "%^&*@production.com.vn",
+        "password": "Aa123456@"
+      },
+      "email hợp lệ nhưng không có password": {
+        "email": "agency@production.com.vn",
+        "password": ""
+      },
+      "password hợp lệ nhưng không có email": {
+        "email": "",
+        "password": "Aa123456@"
+      },
+      "email sai định dạng": {
+        "email": "agency@p",
+        "password": "Aa123456@"
+      },
+      "email có ký tự viết hoa": {
+        "email": "agency@production.COM.vn",
+        "password": "Aa123456@"
+      },
+      "email > 30 ký tự": {
+        "email": "qwertyuiopasdfghjklzxcvbnmqweasdasd@production.com.vn",
+        "password": "Aa123456@"
+      },
+      "mật khẩu < 6 ký tự": {
+        "email": "agency@production.com.vn",
+        "password": "Aa1"
+      }
+    }
+  }
+}

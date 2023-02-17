@@ -1,0 +1,29 @@
+// transition animation
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.drop-leave-active,
+.drop-enter-active {
+  transition: all 0.3s ease;
+}
+.drop-enter,
+.drop-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.float-up-leave-active,
+.float-up-enter-active {
+  transition: all 0.3s ease;
+}
+.float-up-enter,
+.float-up-leave-to {
+  transform: translateY(200px);
+  opacity: 0;
+}

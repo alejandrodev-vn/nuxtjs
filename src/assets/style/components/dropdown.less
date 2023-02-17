@@ -1,0 +1,25 @@
+.ant-dropdown {
+  .ant-dropdown-menu {
+    .ant-dropdown-menu-item {
+      color: @black;
+      &:hover {
+        background-color: @primary-3;
+      }
+    }
+  }
+}
+.ant-select-dropdown-menu-item {
+  color: @black;
+  @apply flex items-center;
+  &:hover:not(.ant-select-dropdown-menu-item-disabled) {
+    background-color: @primary-3 !important;
+  }
+  &-active:not(.ant-select-dropdown-menu-item-disabled) {
+    background-color: @primary-3 !important;
+  }
+}
+.ant-dropdown-trigger {
+  .anticon.anticon-down {
+    font-size: @size-12;
+  }
+}

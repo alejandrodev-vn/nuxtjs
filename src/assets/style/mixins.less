@@ -1,0 +1,38 @@
+// ===========================================
+// Responsive Mixin
+// ===========================================
+.mobile(@rules) {
+  @media screen and (max-width: @screen-sm) {
+    @rules();
+  }
+}
+
+.tablet(@rules) {
+  @media screen and (min-width: @screen-sm) {
+    @rules();
+  }
+}
+
+.sm-desktop(@rules) {
+  @media screen and (min-width: @screen-md) {
+    @rules();
+  }
+}
+
+.desktop(@rules) {
+  @media screen and (min-width: @screen-lg) {
+    @rules();
+  }
+}
+
+.full-hd(@rules) {
+  @media screen and (min-width: @screen-xl) {
+    @rules();
+  }
+}
+
+.widescreen(@rules) {
+  @media screen and (min-width: @screen-xxl) {
+    @rules();
+  }
+}

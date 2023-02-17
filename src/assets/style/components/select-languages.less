@@ -1,0 +1,32 @@
+.select-languages-button {
+  width: 100%;
+  border-radius: @border-radius-base;
+  border-color: @secondary-2;
+  height: @height-field;
+  @apply flex items-center;
+
+  &__flag {
+    &.flag {
+      padding-left: 2.4rem !important;
+      padding-right: 3.4rem;
+      border-radius: @border-radius-base;
+      margin: 0 -0.25rem 0 -1rem;
+    }
+  }
+
+  &__name {
+    color: @black;
+    line-height: 1;
+    @apply font-normal;
+  }
+
+  &__icon {
+    &.anticon {
+      color: @black;
+      margin-left: auto;
+    }
+  }
+}
+.select-languages-option {
+  padding: @padding-4 @padding-12 !important;
+}

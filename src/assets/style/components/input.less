@@ -1,0 +1,51 @@
+.ant-form {
+  .ant-form-item {
+    margin: 0 0 @margin-24;
+    .ant-form-item-label {
+      line-height: 1;
+      margin-bottom: 0.5rem;
+
+      label {
+        font-size: @size-12;
+        color: @secondary-1;
+        @apply font-medium;
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      .ant-input {
+        height: @height-field;
+        border: 1px solid @secondary-2;
+        color: @black;
+      }
+
+      .ant-form-explain {
+        font-size: @size-12;
+        color: @secondary-1;
+        margin-top: 0.25rem;
+        @apply font-medium;
+      }
+
+      .has-error {
+        .ant-input {
+          border-color: @red;
+        }
+
+        .ant-form-explain {
+          color: @red;
+          font-size: @size-12;
+        }
+      }
+    }
+  }
+}
+.ant-input,
+.mx-input-wrapper .mx-input,
+.ant-select-selection-selected-value {
+  border-color: @black-gray;
+  font-size: @size-16;
+  color: @black;
+}
+.ant-select-arrow {
+  color: @black;
+}

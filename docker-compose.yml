@@ -1,0 +1,15 @@
+version: '3'
+
+# Define all the containers.
+services:
+  # Frontend Container.
+  frontend:
+    build:
+      context: .
+    environment:
+      - HOST=0.0.0.0
+    volumes:
+      - .:/var/app
+    ports:
+      - 4000:4000
+    tty: true

@@ -1,0 +1,41 @@
+.ant-table {
+  .ant-table-content {
+    .ant-table-body {
+      overflow: auto;
+
+      .ant-table-thead {
+        & > tr {
+          & > th {
+            padding: 0.75rem 0.5rem;
+            font-size: @size-14;
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        & > tr {
+          & > td {
+            padding: @padding-8;
+            font-size: @size-14;
+          }
+
+          &:hover {
+            & > td {
+              background-color: @primary-4;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-table-footer {
+      background-color: @white;
+      padding: 0.5rem 1rem;
+      @apply text-right;
+    }
+  }
+  /deep/.ant-table-column-sorter-down,
+  /deep/.ant-table-column-sorter-up {
+    font-size: @size-12;
+  }
+}

@@ -1,0 +1,29 @@
+# Taken from https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+FROM node:14-slim
+
+# TINI ENTRYPOINT
+ENV TINI_VERSION v0.18.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+
+RUN mkdir -p /var/app
+
+# Create app directory
+WORKDIR /var/app
+
+COPY ["package.json", "package-lock.json", "tailwind.config.js", "/var/app/"]
+
+# Bundle app source
+COPY nuxt.config.agency-development.js /var/app/nuxt.config.js
+
+RUN npm install
+
+COPY src /var/app/src
+
+USER root
+
+RUN npm run build
+
+ENTRYPOINT ["/tini", "--"]
+
+CMD ["npm", "start"]

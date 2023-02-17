@@ -1,0 +1,73 @@
+import Vue from 'vue'
+import {
+  Layout,
+  Icon,
+  Button,
+  Tabs,
+  Menu,
+  Tree,
+  Popover,
+  Dropdown,
+  Row,
+  Col,
+  Input,
+  InputNumber,
+  FormModel,
+  Drawer,
+  Badge,
+  Spin,
+  Pagination,
+  Progress,
+  Collapse,
+  Table,
+  Select,
+  Switch,
+  Checkbox,
+  Radio,
+  Avatar,
+  Tooltip,
+  AutoComplete,
+  Modal,
+  Timeline,
+  Cascader,
+  Breadcrumb,
+  Carousel,
+  Upload,
+  Alert,
+} from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.less'
+
+Vue.use(Layout)
+Vue.use(Icon)
+Vue.use(Button)
+Vue.use(Tabs)
+Vue.use(Menu)
+Vue.use(Tree)
+Vue.use(Popover)
+Vue.use(Dropdown)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Input)
+Vue.use(InputNumber)
+Vue.use(FormModel)
+Vue.use(Drawer)
+Vue.use(Badge)
+Vue.use(Spin)
+Vue.use(Pagination)
+Vue.use(Progress)
+Vue.use(Collapse)
+Vue.use(Table)
+Vue.use(Select)
+Vue.use(Switch)
+Vue.use(Checkbox)
+Vue.use(Radio)
+Vue.use(Avatar)
+Vue.use(Tooltip)
+Vue.use(AutoComplete)
+Vue.use(Modal)
+Vue.use(Timeline)
+Vue.use(Cascader)
+Vue.use(Breadcrumb)
+Vue.use(Carousel)
+Vue.use(Upload)
+Vue.use(Alert)
